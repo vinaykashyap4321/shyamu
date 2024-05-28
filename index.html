@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style1.css">
+   <link rel="stylesheet" href="fontawesome-free-5.15.3-web/css/all.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+   <link rel="stylesheet" href="bootstrap.css">
+   
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        /* Styles for larger screens */
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            min-height: 8vh;
+            background-color: #333;
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        .nav-links {
+            display: flex;
+            justify-content: space-around;
+            width: 50%;
+        }
+        
+        .nav-links li {
+            list-style: none;
+        }
+        
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            letter-spacing: 3px;
+            font-weight: bold;
+            font-size: 14px;
+        }
+        
+        /* Styles for smaller screens */
+        @media screen and (max-width: 768px) {
+            body {
+                overflow-x: hidden;
+            }
+        
+            .nav-links {
+                position: absolute;
+                right: 0px;
+                height: 92vh;
+                top: 8vh;
+                background-color: #01204E;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 50%;
+                transform: translateX(100%);
+                transition: transform 0.5s ease-in;
+            }
+        
+            .nav-links.active {
+                transform: translateX(0%);
+            }
+        
+            .nav-links li {
+                opacity: 1;
+                transition: opacity 0.5s ease-in-out;
+            }
+        
+            .burger {
+                display: block;
+                cursor: pointer;
+            }
+        
+            .burger div {
+                width: 25px;
+                height: 3px;
+                background-color: white;
+                margin: 5px;
+                transition: all 0.3s ease;
+            }
+            .whatsapp-icon {
+                color: green; /* Change the color as needed */
+                font-size: 24px; /* Adjust the size as needed */
+            }
+            .phone-icon {
+                color: blue; /* Change the color as needed */
+                font-size: 24px; /* Adjust the size as needed */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="main-container">
+    <nav >
+        <div class="logo">
+            <img src="images/logo.jpg" alt="Your Logo">
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#abc">About</a></li>
+            <li><a href="#ser">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="feedback.html">Feedback</a></li>
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+</div>
+
+
+
+    <div class="home-container">
+        <div class="home-content">
+            <div class="inner-content">
+                <h3>best in city</h3>
+                <h2>trusted cab service in Chhattisgarh</h2>
+                <p style="font-size: medium;">Discover the convenience and reliability of trusted cab services in Chhattisgarh. Whether you're a local resident or a visitor exploring this beautiful state, having access to dependable transportation is essential for a smooth journey.</p>
+                <br>
+                <br>
+                <a href="tel:+916260363135" class="booknow" style="background-color: green;"><b>book now</b></a>
+                <br>
+                <br><br>
+                <a href="https://wa.me/+916260363135" target="_blank" class="whatsapp-icon">
+                    <i class="fab fa-whatsapp">&nbsp;6260363135</i>
+                </a>
+                <br>
+                <a href="tel:+916260363135" class="phone-icon">
+                    <i class="fas fa-phone">&nbsp;6260363135</i>
+                </a>
+            </div>
+           
+        </div>
+    </div>
+    <!-- home section ended -->
+    <div class="container mt-5">
+        <h2 class="text-center mb-4" id="ser">Our Services</h2>
+        <br>
+        <center><p id="p">we provide cabs for local ride, outstation trip and airport commute</p></center>
+        <br><br>
+        <div class="row">
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <center><h4 class="card-title">Local Rides</h4></center>
+                        <p class="card-text">Description of Service 1 goes here. This could include details about what the service offers, its benefits, etc.</p>
+                    </div>
+                    <img src="c1.png" class="card-img-top" alt="Service 1">
+                    
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <center><h4 class="card-title">Outstation</h4></center>
+                        <p class="card-text">Description of Service 2 goes here. This could include details about what the service offers, its benefits, etc.</p>
+                    </div>
+                    <img src="c2.png" class="card-img-top" alt="Service 2">
+                    
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <center><h4 class="card-title">Airport</h4></center>
+                        <p class="card-text">Description of Service 3 goes here. This could include details about what the service offers, its benefits, etc.</p>
+                    </div>
+                    <img src="c3.png" class="card-img-top" alt="Service 3">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- our tariff -->
+    
+    <div class="main-tariff" id="abcd">
+        <h1 id="fleet">our <span>fleet</span></h1>
+        <div class="inner-tarrif">
+            <div class="tarrif-container">
+                <div class="inner-box">
+                    <img src="images/image1.png" alt="">
+                    <h2>Sedan</h2>
+                    <p>Traveling in style and comfort is made easy with our sedan cab service. Whether you're heading to the airport, attending a business meeting, or exploring the city, our fleet of sedan cars offers the perfect blend of luxury, convenience, and affordability.</p>
+                    <br>
+                <br>
+                <a href="tel:+916260363135" class="booknow" style="background-color: green;"><b>book now</b></a>
+                <br>
+                <br><br>
+                <a href="https://wa.me/+916260363135" target="_blank" class="whatsapp-icon">
+                    <i class="fab fa-whatsapp">&nbsp;6260363135</i>
+                </a>
+                <br>
+                <a href="tel:+916260363135" class="phone-icon">
+                    <i class="fas fa-phone">&nbsp;6260363135</i>
+                </a>
+                </div>
+            </div>
+    
+            <div class="tarrif-container">
+                <div class="inner-box">
+                    <img src="images/xuv.jpg" alt="">
+                    <h2 class="heading-yellow">XUV</h2>
+                    <p>Experience the thrill of off-road adventures and the versatility of urban commuting with our XUV (Xtreme Utility Vehicle). Built to conquer any terrain and tackle everyday challenges with ease, the XUV offers a perfect blend of power</p>
+                    <br>
+                <br>
+                <a href="tel:+916260363135" class="booknow" style="background-color: green;"><b>book now</b></a>
+                <br>
+                <br><br>
+                <button>
+                <a href="https://wa.me/+916260363135" target="_blank" class="whatsapp-icon" id="f">
+                    <i class="fab fa-whatsapp">&nbsp;6260363135</i>
+                </a>
+            </button>
+                <br>
+                <a href="tel:+916260363135" class="phone-icon">
+                    <i class="fas fa-phone">&nbsp;6260363135</i>
+                </a>
+                </div>
+            </div>
+    
+            <div class="tarrif-container">
+                <div class="inner-box">
+                    <img src="images/hetch.jpg" alt="">
+                    <h2>Hatchback</h2>
+                    <p >Specialized Hetch car service with expert technicians using the latest diagnostics and genuine parts to keep your innovative vehicle running at its best. Trust your Hetch to our skilled team.</p>
+                    <br>
+                <br>
+                <a href="tel:+916260363135" class="booknow" style="background-color: green;"><b>book now</b></a>
+                <br>
+                <br><br>
+                <a href="https://wa.me/+916260363135" target="_blank" class="whatsapp-icon">
+                    <i class="fab fa-whatsapp">&nbsp;6260363135</i>
+                </a>
+                <br>
+                <a href="tel:+916260363135" class="phone-icon">
+                    <i class="fas fa-phone">&nbsp;6260363135</i>
+                </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    <!-- our tariff ended -->
+    
+    <!-- fast booking -->
+    <div class="fast-booking">
+        <h1 class="fast-hading">we do best</h1>
+        <h2>than you wish</h2>
+        <div class="inner-fast">
+            <div class="booking-content">
+                <div class="icon-fast">
+                    <span><i class="fas fa-star"></i></span>
+                </div>
+                <div class="inner-fast-text">
+                    <h1>fast booking</h1>
+                    <p>Enjoy competitive rates and transparent pricing with no hidden fees. Bookfast offers cost-effective transportation without compromising on quality service.</p>
+                
+                </div>
+            </div>
+                <h1></h1>
+                <div class="inner-fast-text">
+                    <h1 style="font-size: 35px;color: aliceblue; text-decoration: underline;">Why Choose Us?</h1>    
+                </div>
+                <div class="inner-fast-text">
+                    <h1>Safety First:</h1>
+                    <p style="color: white; font-size: 15px;">Your safety is our top priority. We adhere to strict safety protocols to ensure that every journey with us is secure and worry-free. From well-maintained vehicles to trained drivers, we leave no stone unturned in providing you with a safe travel experience.</p>
+                
+                </div>
+                <div class="inner-fast-text">
+                    <h1>Professional Drivers:</h1>
+                    <p style="color: white; font-size: 15px;">Our team of experienced and courteous drivers is dedicated to providing you with excellent service. They are well-versed with the local routes, ensuring that you reach your destination on time, every time.</p>
+                </div>
+                <div class="inner-fast-text">
+                    <h1>24/7 Availability:</h1>
+                    <p style="color: white; font-size: 15px;">Need a cab at any hour of the day or night? We've got you covered. Our services are available round-the-clock, ensuring that you have access to transportation whenever you need it.</p>
+                </div>
+                <div class="inner-fast-text">
+                    <h1>Transparent Pricing:</h1>
+                    <p style="color: white; font-size: 15px;">Say goodbye to hidden charges and unexpected fees. With transparent pricing and competitive rates, you can trust us to provide you with value for your money</p>
+                </div>
+                    
+            </div>
+        
+    </div>
+    
+    
+    
+    
+    <!-- fast booking end -->
+    
+    
+    
+    <div class="testimonials">
+        <h1 class="heading-test">happy clients</h1>
+        <div class="main-testimonials">
+            <div class="inner-test active">
+                <p>"Choosing The Cab Service has been a total game-changer for me. Every ride I've taken with them has been smooth, efficient, and reliable. The drivers are professional and courteous, making the journey not just convenient but enjoyable too. Their vehicles are always clean and well-maintained, ensuring a comfortable ride every time. What sets The Cab Service apart is their commitment to safety - I feel completely at ease knowing that I'm in good hands whenever I book a ride with them. Whether it's a short trip around the city or a longer journey, I trust The Cab Service to get me to my destination safely and on time. I highly recommend them to anyone in need of dependable transportation!"</p>
+                <div class="clients">
+                    <img src="images/yogi.png" alt="" id="yogi">
+                    <h1>Yogeshwar Reddy</h1>
+                </div>
+            </div>
+            <div class="inner-test">
+                <p>"Using The Cab Service has made getting around so easy for me. Every time I've booked a ride with them, it's been smooth and hassle-free. The drivers are friendly, and the cars are always clean and comfy. Safety is a big priority for them, which makes me feel really secure. Whether it's a short ride or a longer trip, I know I can rely on The Cab Service to get me there safely and on time. If you need a ride, I definitely recommend giving them a try!"</p>
+                <div class="clients">
+                    <img src="images/jhon.png" alt="">
+                    <h1>sanjay chauhan</h1>
+                </div>
+            </div>
+            <div class="inner-test">
+                <p>"They're never late, which is awesome. I feel really safe with them, and they make every ride enjoyable. I'd recommend them to anyone looking for a reliable and friendly cab service!"</p>
+                <div class="clients">
+                    <img src="images/shruti.jpg" alt="" id="shruti">
+                    <h1>shruti jha</h1>
+                </div>
+            </div>
+            <div class="inner-test">
+                <p>"The Cab Service is awesome! Their drivers are nice, their cars are clean, and they always get me where I need to go on time. I feel really safe with them, and I always have a great ride. I definitely recommend them!"</p>
+                <div class="clients">
+                    <img src="images/aadi.png" alt="" id="shruti" >
+                    <h1>Likhith subhash</h1>
+                </div>
+            </div>
+            <div class="inner-test">
+                <p>"Their drivers are friendly, their cars are clean, and they're always right on time. I feel super safe with them, and I know I can always count on a smooth ride. I highly recommend them to everyone!"</p>
+                <div class="clients">
+                    <img src="images/vikash.jpg" alt="" id="shruti" >
+                    <h1>vikash gupta</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="about-section">
+        <div class="container">
+            <center><h2  id="abc">About Us</h2></center>
+            <p>The cab service  provides Cab Service in Raipur,Bhilai and Durg city. We are in this Industry over 6 years .We provide Local city ride, Outstation trip and Airport service. We value that customers deserve reliability and personalized service, and we strive to provide you with competitive pricing.</p>
+        </div>
+    </div>
+
+    <div class="contact-section" id="contact">
+        <div class="container">
+            <h2 id="cont">Contact Us</h2>
+            <p>Get in touch with us for any inquiries or assistance.</p>
+            <div id="ab" style="margin: 10px;">
+                <div class="contact-info" style="font-size: 15px;">
+                    <strong>Contact Number:</strong> <a href="tel:+916260363135">+91 6260363135</a>
+                </div>
+                <div class="contact-info" style="font-size: 15px;">
+                    <strong>Contact Number:</strong> <a href="tel:+918827798971">+91 8827798971</a>
+                </div>
+                <div style="font-size: 15px;">
+                    <strong>WhatsApp Number:</strong>
+                    <a href="https://wa.me/+916260363135" target="_blank" class="whatsapp-icon">
+                        <i class="fab fa-whatsapp">&nbsp;6260363135</i>
+                    </a>
+                </div>
+                <br>
+                <div style="font-size: 15px;">
+                    <strong>WhatsApp Number:</strong>
+                    <a href="https://wa.me/+918827798971" target="_blank" class="whatsapp-icon">
+                        <i class="fab fa-whatsapp">&nbsp;8827798971</i>
+                    </a>
+                </div>
+                <br>
+                <div class="contact-info" style="font-size: 15px;">
+                    <strong>Gmail Address:</strong> <a href="mailto:shyamu00988@gmail.com">shyamu00988@gmail.com</a>
+                </div>
+            </div>
+            
+                
+                
+                
+                
+                <div class="contact-info" style="font-size: 15px;">
+                    <strong>Location:</strong>  <b>Raipur,Bhilai,Durg,Bilaspur</b>
+                </div>
+                </div>
+        </div>
+    </div>
+    
+    <br><br><br><br>
+    <footer class="footer bg-dark text-light text-center py-3">
+        <div class="container">
+          <div class="text-left">
+            <a href="#" class="btn btn-success btn-book" style="font-size: 30px;">
+              <i class="fas fa-phone-alt mr-2"></i> <!-- Phone icon -->
+              Book Right Now
+            </a>
+          </div>
+        </div>
+        </footer>
+      
+
+        <script>
+            const navSlide = () => {
+                const burger = document.querySelector('.burger');
+                const nav = document.querySelector('.nav-links');
+    
+                burger.addEventListener('click', () => {
+                    // Toggle nav
+                    nav.classList.toggle('active');
+    
+                    // Toggle burger icon
+                    burger.classList.toggle('toggle');
+                });
+            };
+    
+            navSlide();
+
+            let currentSlide = 0;
+            const slides = document.querySelectorAll('.inner-test');
+        
+            function showSlide(n) {
+                slides.forEach(slide => slide.style.display = 'none');
+                currentSlide = (n + slides.length) % slides.length;
+                slides[currentSlide].style.display = 'block';
+            }
+        
+            function changeSlide() {
+                showSlide(currentSlide + 1);
+            }
+        
+            // Change slide every 2 seconds
+            setInterval(changeSlide, 2000);
+        </script>
+        
+        
+</body>
+</html>
